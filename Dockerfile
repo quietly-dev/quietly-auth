@@ -1,9 +1,9 @@
-# mohammaddev/{{project_name}}
+# mohammaddev/quietly_auth
 
 FROM node:12.8.0-alpine
 
 ENV COMPlus_EnableDiagnostics=0
-WORKDIR /usr/share/{{project_name}}
+WORKDIR /usr/share/quietly_auth
 
 RUN apk update && apk upgrade \
     && apk add --no-cache git \
@@ -12,8 +12,8 @@ RUN apk update && apk upgrade \
 ENV PORT 6001
 EXPOSE 6001
 
-COPY . /usr/share/{{project_name}}
-RUN cd /usr/share/{{project_name}}
+COPY . /usr/share/quietly_auth
+RUN cd /usr/share/quietly_auth
 RUN yarn
 
 CMD ["yarn", "start"]

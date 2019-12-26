@@ -9,7 +9,7 @@ const port = process.env.PORT ? process.env.PORT : 6001;
 app.use(bodyParser.json())
 
 app.get("/", (req: express.Request, res: express.Response) => {
-    res.send("{{project_name}} MicroService API is running")
+    res.send("quietly-auth MicroService API is running")
 });
 
-app.listen(port, () => console.log(`{{project_name}} microservice listening on port: ${port}!`));
+app.listen(port, () => console.log(`quietly-auth microservice listening on port: ${port}!`));

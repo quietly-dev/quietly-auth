@@ -1,7 +1,7 @@
 {
-  "name": "{{project_name}}",
+  "name": "quietly-auth",
   "version": "1.0.0",
-  "description": "{{project_name}} microservice for mohammad.dev",
+  "description": "quietly-auth microservice for mohammad.dev",
   "main": "index.js",
   "author": "Mohammad Al-Ahdal <mo@mohammad.dev>",
   "license": "MIT",
